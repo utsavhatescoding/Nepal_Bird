@@ -1,0 +1,53 @@
+{
+  "parity": [
+    {
+      "name": "hero",
+      "backend": "webgl",
+      "seconds": 4.2765,
+      "maxError": 2.384185791015625e-7,
+      "top3": [
+        33,
+        43,
+        74
+      ],
+      "pythonTop3": [
+        33,
+        43,
+        74
+      ]
+    },
+    {
+      "name": "black",
+      "backend": "webgl",
+      "seconds": 0.2987999999998137,
+      "maxError": 9.872019290924072e-8,
+      "top3": [
+        38,
+        14,
+        52
+      ],
+      "pythonTop3": [
+        38,
+        14,
+        52
+      ]
+    },
+    {
+      "name": "grey",
+      "backend": "webgl",
+      "seconds": 0.292,
+      "maxError": 1.210719347000122e-8,
+      "top3": [
+        83,
+        52,
+        11
+      ],
+      "pythonTop3": [
+        83,
+        52,
+        11
+      ]
+    }
+  ],
+  "errors": []
+}

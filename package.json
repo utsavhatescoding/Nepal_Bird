@@ -1,0 +1,22 @@
+{
+  "name": "nepal-bird-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "verify:model": "node scripts/verify-model.mjs",
+    "verify:browser": "node scripts/check-layout.mjs && node scripts/check-inference.mjs",
+    "verify:release": "node scripts/check-release.mjs"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "4.22.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "prettier": "^3.6.2",
+    "vite": "6.4.1"
+  }
+}

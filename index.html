@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#183c30" />
+    <meta
+      name="description"
+      content="Get photo identification suggestions for 85 birds, explore Nepal's bird life, and keep a personal field notebook."
+    />
+    <meta
+      property="og:title"
+      content="Nepal Bird ID — A closer look at the wild"
+    />
+    <meta
+      property="og:description"
+      content="A field companion for curious people. Identify, explore and record Nepal’s bird life."
+    />
+    <meta property="og:image" content="/assets/nepal-bird-social.webp" />
+    <link rel="icon" href="/assets/nepal-bird-mark.svg" type="image/svg+xml" />
+    <title>Nepal Bird ID — A closer look at the wild</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="header">
+      <a class="brand" href="#home"
+        ><img
+          src="/assets/nepal-bird-mark.svg"
+          alt=""
+          width="40"
+          height="40"
+        /><span>Nepal Bird ID<small>A field companion</small></span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#identify">Identify</a><a href="#explore">Field guide</a
+        ><a href="#notebook">Notebook</a><a href="#about">Our purpose</a>
+      </nav>
+      <a class="header-cta" href="#identify"
+        >Identify a bird <span aria-hidden="true">↗</span></a
+      >
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer>
+      <a class="brand" href="#home">Nepal Bird ID</a>
+      <p>Look closely. Tread lightly.</p>
+      <span>85 supported species · Educational identification</span>
+    </footer>
+    <dialog id="profile" aria-label="Species profile and field notes">
+      <button class="close" aria-label="Close species profile">×</button>
+      <div id="profile-content"></div>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

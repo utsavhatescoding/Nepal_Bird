@@ -1,0 +1,852 @@
+[
+  {
+    "index": 0,
+    "number": 1,
+    "common": "Grey Francolin",
+    "scientific": "Ortygornis pondicerianus",
+    "order": "Galliformes",
+    "family": "Phasianidae",
+    "globalStatus": "VU",
+    "nepalStatus": "-"
+  },
+  {
+    "index": 1,
+    "number": 10,
+    "common": "Greater Flamingo",
+    "scientific": "Phoenicopterus roseus",
+    "order": "Phoenicopteriformes",
+    "family": "Phoenicopteridae",
+    "globalStatus": "-",
+    "nepalStatus": "-"
+  },
+  {
+    "index": 2,
+    "number": 11,
+    "common": "Tibetan Sandgrouse",
+    "scientific": "Syrrhaptes tibetanus",
+    "order": "Pterocliformes",
+    "family": "Pteroclidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 3,
+    "number": 12,
+    "common": "Indian Nightjar",
+    "scientific": "Caprimulgus asiaticus",
+    "order": "Caprimulgiformes",
+    "family": "Caprimulgidae",
+    "globalStatus": "-",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 4,
+    "number": 13,
+    "common": "Large-tailed Nightjar",
+    "scientific": "Caprimulgus macrurus",
+    "order": "Caprimulgiformes",
+    "family": "Caprimulgidae",
+    "globalStatus": "-",
+    "nepalStatus": "-"
+  },
+  {
+    "index": 5,
+    "number": 14,
+    "common": "Asian Emerald Cuckoo",
+    "scientific": "Chrysococcyx maculatus",
+    "order": "Cuculiformes",
+    "family": "Cuculidae",
+    "globalStatus": "-",
+    "nepalStatus": "-"
+  },
+  {
+    "index": 6,
+    "number": 15,
+    "common": "Large Hawk-cuckoo",
+    "scientific": "Hierococcyx sparverioides",
+    "order": "Cuculiformes",
+    "family": "Cuculidae",
+    "globalStatus": "-",
+    "nepalStatus": "-"
+  },
+  {
+    "index": 7,
+    "number": 16,
+    "common": "Common Hawk-cuckoo",
+    "scientific": "Hierococcyx varius",
+    "order": "Cuculiformes",
+    "family": "Cuculidae",
+    "globalStatus": "-",
+    "nepalStatus": "-"
+  },
+  {
+    "index": 8,
+    "number": 17,
+    "common": "Red-throated Loon",
+    "scientific": "Gavia stellata",
+    "order": "Gaviiformes",
+    "family": "Gaviidae",
+    "globalStatus": "-",
+    "nepalStatus": "-"
+  },
+  {
+    "index": 9,
+    "number": 18,
+    "common": "Eurasian Bittern",
+    "scientific": "Botaurus stellaris",
+    "order": "Pelecaniformes",
+    "family": "Ardeidae",
+    "globalStatus": "-",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 10,
+    "number": 19,
+    "common": "Black bittern",
+    "scientific": "Botaurus flavicollis",
+    "order": "Pelecaniformes",
+    "family": "Ardeidae",
+    "globalStatus": "-",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 11,
+    "number": 2,
+    "common": "Swamp Francolin",
+    "scientific": "Ortygornis gularis",
+    "order": "Galliformes",
+    "family": "Phasianidae",
+    "globalStatus": "VU",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 12,
+    "number": 20,
+    "common": "Great Cormorant",
+    "scientific": "Phalacrocorax carbo",
+    "order": "Suliformes",
+    "family": "Phalacrocoracidae",
+    "globalStatus": "-",
+    "nepalStatus": "-"
+  },
+  {
+    "index": 13,
+    "number": 21,
+    "common": "Indian Cormorant",
+    "scientific": "Phalacrocorax fuscicollis",
+    "order": "Suliformes",
+    "family": "Phalacrocoracidae",
+    "globalStatus": "-",
+    "nepalStatus": "-"
+  },
+  {
+    "index": 14,
+    "number": 22,
+    "common": "Barred Cuckoo-dove",
+    "scientific": "Macropygia unchall",
+    "order": "Columbiformes",
+    "family": "Columbidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 15,
+    "number": 23,
+    "common": "Mountain Imperial-pigeon",
+    "scientific": "Ducula badia",
+    "order": "Columbiformes",
+    "family": "Columbidae",
+    "globalStatus": "-",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 16,
+    "number": 24,
+    "common": "Thick-billed Green-pigeon",
+    "scientific": "Treron curvirostra",
+    "order": "Columbiformes",
+    "family": "Columbidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 17,
+    "number": 25,
+    "common": "Demoiselle Crane",
+    "scientific": "Anthropoides virgo",
+    "order": "Gruiformes",
+    "family": "Gruidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 18,
+    "number": 26,
+    "common": "Sarus Crane",
+    "scientific": "Grus antigone",
+    "order": "Gruiformes",
+    "family": "Gruidae",
+    "globalStatus": "VU",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 19,
+    "number": 27,
+    "common": "Black-necked Stork",
+    "scientific": "Ephippiorhynchus asiaticus",
+    "order": "Ciconiiformes",
+    "family": "Ciconiidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 20,
+    "number": 28,
+    "common": "Painted Stork",
+    "scientific": "Mycteria leucocephala",
+    "order": "Ciconiiformes",
+    "family": "Ciconiidae",
+    "globalStatus": "-",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 21,
+    "number": 29,
+    "common": "Greater Adjutant",
+    "scientific": "Leptoptilos dubius",
+    "order": "Ciconiiformes",
+    "family": "Ciconiidae",
+    "globalStatus": "EN",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 22,
+    "number": 3,
+    "common": "Satyr Tragopan",
+    "scientific": "Tragopan satyra",
+    "order": "Galliformes",
+    "family": "Phasianidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 23,
+    "number": 30,
+    "common": "Lesser Adjutant",
+    "scientific": "Leptoptilos javanicus",
+    "order": "Ciconiiformes",
+    "family": "Ciconiidae",
+    "globalStatus": "VU",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 24,
+    "number": 31,
+    "common": "Bengal Florican",
+    "scientific": "Houbaropsis bengalensis",
+    "order": "Otidiformes",
+    "family": "Otididae",
+    "globalStatus": "CR",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 25,
+    "number": 32,
+    "common": "Lesser Florican",
+    "scientific": "Sypheotides indicus",
+    "order": "Otidiformes",
+    "family": "Otididae",
+    "globalStatus": "CR",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 26,
+    "number": 33,
+    "common": "River Tern",
+    "scientific": "Sterna aurantia",
+    "order": "Charadriiformes",
+    "family": "Laridae",
+    "globalStatus": "VU",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 27,
+    "number": 34,
+    "common": "Black-bellied Tern",
+    "scientific": "Sterna acuticauda",
+    "order": "Charadriiformes",
+    "family": "Laridae",
+    "globalStatus": "EN",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 28,
+    "number": 35,
+    "common": "Yellow-wattled Lapwing",
+    "scientific": "Vanellus malabaricus",
+    "order": "Charadriiformes",
+    "family": "Charadriidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 29,
+    "number": 36,
+    "common": "Red-wattled Lapwing",
+    "scientific": "Vanellus indicus",
+    "order": "Charadriiformes",
+    "family": "Charadriidae",
+    "globalStatus": "-",
+    "nepalStatus": "-"
+  },
+  {
+    "index": 30,
+    "number": 37,
+    "common": "Ibisbill",
+    "scientific": "Ibidorhyncha struthersii",
+    "order": "Charadriiformes",
+    "family": "Ibidorhynchidae",
+    "globalStatus": "-",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 31,
+    "number": 38,
+    "common": "Eastern Grass-owl",
+    "scientific": "Tyto longimembris",
+    "order": "Strigiformes",
+    "family": "Tytonidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 32,
+    "number": 39,
+    "common": "Tawny fish owl",
+    "scientific": "Ketupa flavipes",
+    "order": "Strigiformes",
+    "family": "Strigidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 33,
+    "number": 4,
+    "common": "Himalayan Monal",
+    "scientific": "Lophophorus impejanus",
+    "order": "Galliformes",
+    "family": "Phasianidae",
+    "globalStatus": "-",
+    "nepalStatus": "-"
+  },
+  {
+    "index": 34,
+    "number": 40,
+    "common": "Bearded Vulture",
+    "scientific": "Gypaetus barbatus",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 35,
+    "number": 41,
+    "common": "White-rumped Vulture",
+    "scientific": "Gyps bengalensis",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "globalStatus": "CR",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 36,
+    "number": 42,
+    "common": "Egyptian Vulture",
+    "scientific": "Neophron percnopterus",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "globalStatus": "EN",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 37,
+    "number": 43,
+    "common": "Steppe Eagle",
+    "scientific": "Aquila nipalensis",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "globalStatus": "EN",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 38,
+    "number": 44,
+    "common": "Rufous-bellied Eagle",
+    "scientific": "Lophotriorchis kienerii",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 39,
+    "number": 45,
+    "common": "Pallas's Fish-eagle",
+    "scientific": "Haliaeetus leucoryphus",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "globalStatus": "EN",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 40,
+    "number": 46,
+    "common": "Red-headed Trogon",
+    "scientific": "Harpactes erythrocephalus",
+    "order": "Trogoniformes",
+    "family": "Trogonidae",
+    "globalStatus": "-",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 41,
+    "number": 47,
+    "common": "Great Hornbill",
+    "scientific": "Buceros bicornis",
+    "order": "Bucerotiformes",
+    "family": "Bucerotidae",
+    "globalStatus": "VU",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 42,
+    "number": 48,
+    "common": "Rufous-necked Hornbill",
+    "scientific": "Aceros nipalensis",
+    "order": "Bucerotiformes",
+    "family": "Bucerotidae",
+    "globalStatus": "VU",
+    "nepalStatus": "-"
+  },
+  {
+    "index": 43,
+    "number": 49,
+    "common": "Blue-eared Kingfisher",
+    "scientific": "Alcedo meninting",
+    "order": "Coraciiformes",
+    "family": "Alcedinidae",
+    "globalStatus": "-",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 44,
+    "number": 5,
+    "common": "Common Pochard",
+    "scientific": "Aythya ferina",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "globalStatus": "VU",
+    "nepalStatus": "-"
+  },
+  {
+    "index": 45,
+    "number": 50,
+    "common": "Ruddy Kingfisher",
+    "scientific": "Halcyon coromanda",
+    "order": "Coraciiformes",
+    "family": "Alcedinidae",
+    "globalStatus": "EN",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 46,
+    "number": 51,
+    "common": "Blue-eared Barbet",
+    "scientific": "Psilopogon cyanotis",
+    "order": "Piciformes",
+    "family": "Megalaimidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 47,
+    "number": 52,
+    "common": "White-browed Piculet",
+    "scientific": "Sasia ochracea",
+    "order": "Piciformes",
+    "family": "Picidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 48,
+    "number": 53,
+    "common": "Red-headed Falcon",
+    "scientific": "Falco chicquera",
+    "order": "Falconiformes",
+    "family": "Falconidae",
+    "globalStatus": "-",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 49,
+    "number": 54,
+    "common": "Laggar Falcon",
+    "scientific": "Falco jugger",
+    "order": "Falconiformes",
+    "family": "Falconidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 50,
+    "number": 55,
+    "common": "Red-breasted Parakeet",
+    "scientific": "Psittacula alexandri",
+    "order": "Psittaciformes",
+    "family": "Psittacidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 51,
+    "number": 56,
+    "common": "Vernal Hanging-parrot",
+    "scientific": "Loriculus vernalis",
+    "order": "Psittaciformes",
+    "family": "Psittacidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 52,
+    "number": 57,
+    "common": "Sultan Tit",
+    "scientific": "Melanochlora sultanea",
+    "order": "Passeriformes",
+    "family": "Paridae",
+    "globalStatus": "-",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 53,
+    "number": 58,
+    "common": "Yellow-cheeked Tit",
+    "scientific": "Machlolophus spilonotus",
+    "order": "Passeriformes",
+    "family": "Paridae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 54,
+    "number": 59,
+    "common": "Yellow-bellied Warbler",
+    "scientific": "Abroscopus superciliaris",
+    "order": "Passeriformes",
+    "family": "Scotocercidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 55,
+    "number": 6,
+    "common": "Baer's Pochard",
+    "scientific": "Aythya baeri",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "globalStatus": "CR",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 56,
+    "number": 60,
+    "common": "Rufous-faced Warbler",
+    "scientific": "Abroscopus albogularis",
+    "order": "Passeriformes",
+    "family": "Scotocercidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 57,
+    "number": 61,
+    "common": "Golden-breasted Fulvetta",
+    "scientific": "Lioparus chrysotis",
+    "order": "Passeriformes",
+    "family": "Paradoxornithidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 58,
+    "number": 62,
+    "common": "Brown Parrotbill",
+    "scientific": "Paradoxornis unicolor",
+    "order": "Passeriformes",
+    "family": "Paradoxornithidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 59,
+    "number": 63,
+    "common": "Black-chinned Yuhina",
+    "scientific": "Yuhina nigrimenta",
+    "order": "Passeriformes",
+    "family": "Zosteropidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 60,
+    "number": 64,
+    "common": "White-naped Yuhina",
+    "scientific": "Yuhina bakeri",
+    "order": "Passeriformes",
+    "family": "Zosteropidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 61,
+    "number": 65,
+    "common": "Tawny-bellied Babbler",
+    "scientific": "Dumetia hyperythra",
+    "order": "Passeriformes",
+    "family": "Timaliidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 62,
+    "number": 66,
+    "common": "Golden Babbler",
+    "scientific": "Cyanoderma chrysaeum",
+    "order": "Passeriformes",
+    "family": "Timaliidae",
+    "globalStatus": "-",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 63,
+    "number": 67,
+    "common": "Nepal Fulvetta",
+    "scientific": "Alcippe nipalensis",
+    "order": "Passeriformes",
+    "family": "Alcippeidae",
+    "globalStatus": "-",
+    "nepalStatus": "-"
+  },
+  {
+    "index": 64,
+    "number": 68,
+    "common": "Abbott's Babbler",
+    "scientific": "Malacocincla abbotti",
+    "order": "Passeriformes",
+    "family": "Pellorneidae",
+    "globalStatus": "-",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 65,
+    "number": 69,
+    "common": "Greater Necklaced Laughingthrush",
+    "scientific": "Pterorhinus pectoralis",
+    "order": "Passeriformes",
+    "family": "Leiotrichidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 66,
+    "number": 7,
+    "common": "African Comb Duck",
+    "scientific": "Sarkidiornis melanotos",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "globalStatus": "-",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 67,
+    "number": 70,
+    "common": "Grey-sided Laughingthrush",
+    "scientific": "Pterorhinus caerulatus",
+    "order": "Passeriformes",
+    "family": "Leiotrichidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 68,
+    "number": 71,
+    "common": "Rufous-necked Laughingthrush",
+    "scientific": "Pterorhinus ruficollis",
+    "order": "Passeriformes",
+    "family": "Leiotrichidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 69,
+    "number": 72,
+    "common": "Red-tailed Minla",
+    "scientific": "Minla ignotincta",
+    "order": "Passeriformes",
+    "family": "Leiotrichidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 70,
+    "number": 73,
+    "common": "Rusty-fronted Barwing",
+    "scientific": "Actinodura egertoni",
+    "order": "Passeriformes",
+    "family": "Leiotrichidae",
+    "globalStatus": "-",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 71,
+    "number": 74,
+    "common": "White-gorgeted Flycatcher",
+    "scientific": "Anthipes monileger",
+    "order": "Passeriformes",
+    "family": "Muscicapidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 72,
+    "number": 75,
+    "common": "Kashmir Flycatcher",
+    "scientific": "Ficedula subrubra",
+    "order": "Passeriformes",
+    "family": "Muscicapidae",
+    "globalStatus": "VU",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 73,
+    "number": 76,
+    "common": "Jerdon's Bushchat",
+    "scientific": "Saxicola jerdoni",
+    "order": "Passeriformes",
+    "family": "Muscicapidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 74,
+    "number": 77,
+    "common": "Asian Fairy-bluebird",
+    "scientific": "Irena puella",
+    "order": "Passeriformes",
+    "family": "Irenidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 75,
+    "number": 78,
+    "common": "Yellow-vented Flowerpecker",
+    "scientific": "Pachyglossa chrysorrhea",
+    "order": "Passeriformes",
+    "family": "Dicaeidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 76,
+    "number": 79,
+    "common": "Scarlet-backed Flowerpecker",
+    "scientific": "Dicaeum cruentatum",
+    "order": "Passeriformes",
+    "family": "Dicaeidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 77,
+    "number": 8,
+    "common": "Cotton Pygmy-goose",
+    "scientific": "Nettapus coromandelianus",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 78,
+    "number": 80,
+    "common": "Little Spiderhunter",
+    "scientific": "Arachnothera longirostra",
+    "order": "Passeriformes",
+    "family": "Nectariniidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 79,
+    "number": 81,
+    "common": "Ruby-cheeked Sunbird",
+    "scientific": "Chalcoparia singalensis",
+    "order": "Passeriformes",
+    "family": "Nectariniidae",
+    "globalStatus": "-",
+    "nepalStatus": "EN"
+  },
+  {
+    "index": 80,
+    "number": 82,
+    "common": "Black-breasted Weaver",
+    "scientific": "Ploceus benghalensis",
+    "order": "Passeriformes",
+    "family": "Ploceidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 81,
+    "number": 83,
+    "common": "Streaked Weaver",
+    "scientific": "Ploceus manyar",
+    "order": "Passeriformes",
+    "family": "Ploceidae",
+    "globalStatus": "-",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 82,
+    "number": 84,
+    "common": "Black-faced Bunting",
+    "scientific": "Emberiza spodocephala",
+    "order": "Passeriformes",
+    "family": "Emberizidae",
+    "globalStatus": "-",
+    "nepalStatus": "VU"
+  },
+  {
+    "index": 83,
+    "number": 85,
+    "common": "Yellow-breasted Bunting",
+    "scientific": "Emberiza aureola",
+    "order": "Passeriformes",
+    "family": "Emberizidae",
+    "globalStatus": "CR",
+    "nepalStatus": "CR"
+  },
+  {
+    "index": 84,
+    "number": 9,
+    "common": "Great Crested Grebe",
+    "scientific": "Podiceps cristatus",
+    "order": "Podicipediformes",
+    "family": "Podicipedidae",
+    "globalStatus": "-",
+    "nepalStatus": "-"
+  }
+]
