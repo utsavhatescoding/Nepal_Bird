@@ -1,6 +1,6 @@
 # Nepal Bird ID — Ecology update
 
-This update is designed for the existing root-level Nepal_Bird repository and Cloudflare Pages deployment.
+This update supports the existing root-level Nepal_Bird repository. For the current Cloudflare Worker deployment and mobile changes, see MOBILE_UPDATE.md.
 
 ## Update your existing checkout
 
