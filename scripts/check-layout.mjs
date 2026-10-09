@@ -7,6 +7,7 @@ const server = await createServer({
 await server.listen();
 const browser = await chromium.launch({
   headless: true,
+  executablePath: process.env.BIRD_TEST_BROWSER,
   args: ["--no-sandbox"],
 });
 const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
@@ -17,7 +18,7 @@ await page.locator(".hero").waitFor();
 await page.screenshot({ path: "/tmp/bird-desktop.png", fullPage: true });
 await page.setViewportSize({ width: 390, height: 844 });
 await page.screenshot({ path: "/tmp/bird-mobile.png", fullPage: true });
-for (const route of ["home", "identify", "explore", "notebook", "about"]) {
+for (const route of ["home", "identify", "explore", "ecology", "notebook", "about"]) {
   await page.goto(`http://127.0.0.1:5173/#${route}`);
   await page.locator("main h1").waitFor();
   const overflow = await page.evaluate(
@@ -29,7 +30,7 @@ for (const route of ["home", "identify", "explore", "notebook", "about"]) {
 await page.goto("http://127.0.0.1:5173/#explore");
 await page.locator("#search").fill("monal");
 console.log("Search results:", await page.locator(".catalog-card").count());
-await page.locator(".catalog-card").first().click();
+await page.locator(".guide-copy").first().click();
 await page.locator("#profile-save").click();
 await page.locator("[name=location]").fill("Kathmandu park");
 await page

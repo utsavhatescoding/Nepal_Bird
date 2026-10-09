@@ -6,6 +6,7 @@ const server = await preview({
 });
 const browser = await chromium.launch({
   headless: true,
+  executablePath: process.env.BIRD_TEST_BROWSER,
   args: [
     "--no-sandbox",
     "--use-gl=angle",

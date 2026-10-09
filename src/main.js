@@ -1,4 +1,5 @@
 import "./style.css";
+import { ecologyPage, bindEcology, reliefPanel } from "./ecology.js";
 import { identifyBird } from "./inference.js";
 import { preparePixels } from "./preprocess.js";
 const main = document.querySelector("main");
@@ -62,7 +63,7 @@ function pageHead(label, title, text) {
   return `<section class="page-head"><div class="eyebrow">${label}</div><h1>${title}</h1><p>${text}</p></section>`;
 }
 function home() {
-  return `<section class="hero"><img src="/assets/nepal-bird-hero.webp" alt="Bird life in a green landscape"><div class="hero-copy"><div class="eyebrow">For the naturally curious</div><h1>A closer look<br>at the wild.</h1><p>A flash of colour. A familiar call. Discover the bird behind the moment, and the world it belongs to.</p><a class="btn light" href="#identify">Identify a bird <span aria-hidden="true">↗</span></a></div><div class="hero-bottom">Birds · Habitats · Nepal</div></section><div class="intro-strip"><span><strong>85 species.</strong> A starting point for discovery.</span><span>Photo identification on your device</span><span>A notebook for the moments worth keeping</span></div><section class="section"><div class="section-head"><div><div class="eyebrow">Your next encounter</div><h2>From a photograph<br>to a little more understanding.</h2></div><p>You don’t need to know a bird’s name to notice it. Start with a clear photograph, then look closer.</p></div><div class="steps"><article class="step"><span class="step-number">01 / NOTICE</span><h3>Take a photograph</h3><p>Keep your distance. Capture a clear view of one bird, with as much feather detail as possible.</p></article><article class="step"><span class="step-number">02 / COMPARE</span><h3>Explore the possibilities</h3><p>Get three model suggestions. Compare their shape and plumage before deciding what you saw.</p></article><article class="step"><span class="step-number">03 / REMEMBER</span><h3>Keep a field note</h3><p>Save a possible identification, date and a note in your personal browser notebook.</p></article></div></section><section class="feature"><div class="feature-image"><img src="/assets/nepal-bird-hero.webp" alt="A glimpse of Nepal’s bird life" loading="lazy"></div><div class="feature-copy"><div class="eyebrow">The field guide</div><h2>Every bird has<br>a place in the story.</h2><p>Explore the 85 species supported by this model, from waterbirds and raptors to forest songbirds.</p><a class="btn secondary" href="#explore">Open the field guide <span aria-hidden="true">↗</span></a></div></section><section class="section"><div class="eyebrow">A thoughtful companion</div><h2>Curiosity, with care.</h2><p class="lead">A suggestion is a reason to look closer. Our model offers clues, while careful observation and field knowledge help you reach a sound identification.</p><a class="text-button" href="#about">Meet the project and its people</a></section>`;
+  return `<section class="hero"><img src="/assets/nepal-bird-hero.webp" alt="Bird life in a green landscape"><div class="hero-copy"><div class="eyebrow">For the naturally curious</div><h1>A closer look<br>at the wild.</h1><p>A flash of colour. A familiar call. Discover the bird behind the moment, and the world it belongs to.</p><a class="btn light" href="#identify">Identify a bird <span aria-hidden="true">↗</span></a></div><div class="hero-bottom">Birds · Habitats · Nepal</div></section><div class="intro-strip"><span><strong>85 species.</strong> A starting point for discovery.</span><span>Photo identification on your device</span><span>A notebook for the moments worth keeping</span></div><section class="section"><div class="section-head"><div><div class="eyebrow">Your next encounter</div><h2>From a photograph<br>to a little more understanding.</h2></div><p>You don’t need to know a bird’s name to notice it. Start with a clear photograph, then look closer.</p></div><div class="steps"><article class="step"><span class="step-number">01 / NOTICE</span><h3>Take a photograph</h3><p>Keep your distance. Capture a clear view of one bird, with as much feather detail as possible.</p></article><article class="step"><span class="step-number">02 / COMPARE</span><h3>Explore the possibilities</h3><p>Get three model suggestions. Compare their shape and plumage before deciding what you saw.</p></article><article class="step"><span class="step-number">03 / REMEMBER</span><h3>Keep a field note</h3><p>Save a possible identification, date and a note in your personal browser notebook.</p></article></div></section><section class="feature"><div class="feature-image"><img src="/assets/nepal-bird-hero.webp" alt="A glimpse of Nepal’s bird life" loading="lazy"></div><div class="feature-copy"><div class="eyebrow">The field guide</div><h2>Every bird has<br>a place in the story.</h2><p>Explore the 85 species supported by this model, from waterbirds and raptors to forest songbirds.</p><a class="btn secondary" href="#explore">Open the field guide <span aria-hidden="true">↗</span></a></div></section><section class="ecology-teaser"><div><div class="eyebrow">Birds & ecology</div><h2>Small wings.<br>A much bigger world.</h2><p>Seed dispersers. Pollinators. Scavengers. Explore the work birds do, and what their changing populations can tell us.</p><a class="btn light" href="#ecology">Explore birds & ecology ↗</a></div><div class="teaser-facts"><span>01 / THE LIVING WORLD</span><strong>Every encounter<br>has a wider story.</strong><p>From a backyard tree to a Himalayan wetland.</p></div></section><section class="section"><div class="eyebrow">A thoughtful companion</div><h2>Curiosity, with care.</h2><p class="lead">A suggestion is a reason to look closer. Our model offers clues, while careful observation and field knowledge help you reach a sound identification.</p><a class="text-button" href="#about">Meet the project and its people</a></section>${reliefPanel()}`;
 }
 function identifyPage() {
   return `${pageHead("Photo identification", "What caught your eye?", "Start with one clear photograph. Your photo stays on this device during identification.")}<div class="identify-layout"><div><div class="upload-box" id="drop-zone">${cameraIcon}<h3>Bring your bird into focus</h3><p>Choose a photograph or take one with your phone. JPG, PNG and WebP · up to 20 MB.</p><div class="upload-actions"><button class="btn" id="choose">Choose a photo</button><button class="btn secondary" id="camera">Take a photo</button></div><input class="hidden" type="file" id="file" accept="image/jpeg,image/png,image/webp"><input class="hidden" type="file" id="camera-file" accept="image/*" capture="environment"></div><div id="image-controls" class="hidden controls"><label for="crop">Crop the outer edges: <span id="crop-value">0</span>%</label><input id="crop" type="range" min="0" max="30" value="0" step="1"><p class="disclaimer">Use this only when the bird is near the centre. The preview is the image used for identification.</p><button class="text-button" id="replace">Choose a different photograph</button></div></div><aside class="panel"><div class="eyebrow">A first clue</div><h2>Look. Compare.<br>Learn.</h2><p>The model compares your photograph against 85 trained species and returns its three closest matches.</p><button class="btn full" id="identify-button" disabled>Choose a photo to begin</button><div class="status" id="model-status" role="status" aria-live="polite"></div><div id="progress" class="progress hidden"><span></span></div><div class="note"><strong>On your device</strong><br>The model downloads on first use. Identification can take longer on older phones.</div><div class="note"><strong>Know the limits</strong><br>Unsupported species and non-bird photos can still receive a match. Model scores are not verified probabilities.</div></aside></div><section id="results" aria-live="polite"></section>`;
@@ -92,11 +93,12 @@ function renderGuide() {
       ? birds
           .map(
             (x) =>
-              `<button class="catalog-card" data-profile="${x.index}"><span class="eyebrow">${escape(x.order)}</span><h3>${escape(x.common)}</h3><span class="latin">${escape(x.scientific)}</span><span class="family">${escape(x.family)} <span aria-hidden="true">↗</span></span></button>`,
+              `<article class="catalog-card"><div class="guide-photo bird-image" data-guide-photo="${x.index}"><span class="photo-fallback">Reference photo</span></div><button class="guide-copy" data-profile="${x.index}"><span class="eyebrow">${escape(x.order)}</span><h3>${escape(x.common)}</h3><span class="latin">${escape(x.scientific)}</span><span class="family">${escape(x.family)} <span aria-hidden="true">↗</span></span><span class="guide-open">View species ↗</span></button></article>`,
           )
           .join("")
       : '<p class="disclaimer">No species match. Try a broader search or a different order.</p>';
     bindProfiles();
+    observePhotos();
   };
   document.querySelector("#search").addEventListener("input", update);
   document.querySelector("#order").addEventListener("change", update);
@@ -155,7 +157,7 @@ function renderNotebook() {
   );
 }
 function about() {
-  return `${pageHead("Our purpose", "Know the bird.<br>Care for its world.", "A project connecting computer vision with curiosity about Nepal’s bird life.")}<div class="about-grid"><article><h2>Attention is a beginning.</h2><p>Birds connect forests, farms, rivers, wetlands and cities. Noticing them invites us to ask what they eat, where they nest, and what makes their habitat worth protecting.</p><p>This field companion makes a research model accessible. It supports learning and comparison; it does not replace an ornithologist, a field guide or careful evidence.</p></article><article class="panel"><div class="eyebrow">Open about the limits</div><h3>85 classes, not every bird.</h3><p>EfficientNetB0 always chooses among its trained species. The displayed softmax scores are not calibrated probabilities, and high scores do not establish a correct identification.</p><h3>Sources matter.</h3><p>Taxonomy and conservation fields reproduce project materials covering records through 2022. They are historical, not live assessments. A dash does not mean Least Concern.</p><p>Reference photos come from Wikimedia Commons with individual attribution. Species introductions come from Wikipedia with source links and CC BY-SA attribution.</p></article></div><section class="section"><div class="eyebrow">People behind the project</div><h2>A shared curiosity.</h2><div class="contributors">${[
+  return `${pageHead("Our purpose", "Know the bird.<br>Care for its world.", "A project connecting computer vision with curiosity about Nepal’s bird life.")}<section class="purpose-story"><div class="purpose-visual bird-image"><img src="/assets/nepal-bird-hero.webp" alt="Project artwork inspired by Nepal’s bird life" loading="lazy"><div class="credit">Project artwork · Species reference photos appear in the field guide</div></div><div class="purpose-copy"><div class="eyebrow">Rooted in Nepal</div><h2>A name is only<br>the beginning.</h2><p>A bird photograph can open a much bigger conversation: about a forest, a river, a changing season, or the people who care for that place.</p><p>We built Nepal Bird ID to make that first step easier. Our aim is to connect identification with understanding, and understanding with care for the living world.</p><a class="btn" href="#ecology">Discover why birds matter ↗</a></div></section><div class="project-principles"><span><strong>Discover</strong>Start with a photograph.</span><span><strong>Understand</strong>Learn the habitat and the story.</span><span><strong>Care</strong>Observe without disturbance.</span></div><div class="about-grid"><article><h2>Attention is a beginning.</h2><p>Birds connect forests, farms, rivers, wetlands and cities. Noticing them invites us to ask what they eat, where they nest, and what makes their habitat worth protecting.</p><p>This field companion makes a research model accessible. It supports learning and comparison; it does not replace an ornithologist, a field guide or careful evidence.</p></article><article class="panel"><div class="eyebrow">Open about the limits</div><h3>85 classes, not every bird.</h3><p>EfficientNetB0 always chooses among its trained species. The displayed softmax scores are not calibrated probabilities, and high scores do not establish a correct identification.</p><h3>Sources matter.</h3><p>Taxonomy and conservation fields reproduce project materials covering records through 2022. They are historical, not live assessments. A dash does not mean Least Concern.</p><p>Reference photos come from Wikimedia Commons with individual attribution. Species introductions come from Wikipedia with source links and CC BY-SA attribution.</p></article></div><section class="section"><div class="eyebrow">People behind the project</div><h2>A shared curiosity.</h2><div class="contributors">${[
     [
       "prajwol-karki",
       "Prajwol Karki",
@@ -174,7 +176,7 @@ function about() {
     )
     .join(
       "",
-    )}</div></section><section class="section"><div class="eyebrow">Responsible observation</div><h2>Leave the wild as you found it.</h2><div class="steps"><article class="step"><h3>Keep your distance</h3><p>A photograph is never worth disturbing a bird or approaching a nest.</p></article><article class="step"><h3>Share thoughtfully</h3><p>Keep sensitive locations private. An unverified model suggestion is not a confirmed sighting.</p></article><article class="step"><h3>Check the evidence</h3><p>Consult current conservation sources before using historical status fields for research or action.</p></article></div></section>`;
+    )}</div></section><section class="section"><div class="eyebrow">Responsible observation</div><h2>Leave the wild as you found it.</h2><div class="steps"><article class="step"><h3>Keep your distance</h3><p>A photograph is never worth disturbing a bird or approaching a nest.</p></article><article class="step"><h3>Share thoughtfully</h3><p>Keep sensitive locations private. An unverified model suggestion is not a confirmed sighting.</p></article><article class="step"><h3>Check the evidence</h3><p>Consult current conservation sources before using historical status fields for research or action.</p></article></div></section>${reliefPanel()}`;
 }
 function bindProfiles() {
   main
@@ -255,11 +257,39 @@ async function fetchPhoto(bird) {
 }
 async function fillPhoto(container, bird) {
   const photo = await fetchPhoto(bird);
-  if (!container.isConnected || !photo) return;
+  if (!container.isConnected) return;
+  if (!photo) {
+    container.innerHTML = `<span class="photo-fallback">Photo unavailable<br><a href="https://commons.wikimedia.org/w/index.php?search=${encodeURIComponent(bird.scientific)}&title=Special:MediaSearch&type=image" target="_blank" rel="noopener noreferrer">Browse reference images ↗</a></span>`;
+    return;
+  }
   container.innerHTML = `<img src="${escape(photo.url)}" alt="Reference photograph of ${escape(bird.common)}" loading="lazy"><div class="credit">${escape(photo.artist)} · ${escape(photo.licence)} · <a href="${escape(photo.source)}" target="_blank" rel="noopener noreferrer">Source</a>${photo.licenceURL ? ` · <a href="${escape(photo.licenceURL)}" target="_blank" rel="noopener noreferrer">Licence</a>` : ""}</div>`;
   container.querySelector("img").onerror = () => {
     container.innerHTML = '<span class="placeholder">Photo unavailable</span>';
   };
+}
+let photoObserver;
+let photoQueue = [], activePhotos = 0;
+function observePhotos() {
+  photoObserver?.disconnect();
+  photoQueue = [];
+  photoObserver = new IntersectionObserver(entries => {
+    for (const entry of entries) if (entry.isIntersecting) {
+      photoObserver.unobserve(entry.target);
+      photoQueue.push(entry.target);
+    }
+    drainPhotos();
+  }, { rootMargin: "180px" });
+  main.querySelectorAll("[data-guide-photo]").forEach(el => photoObserver.observe(el));
+}
+function drainPhotos() {
+  while (activePhotos < 4 && photoQueue.length) {
+    const el = photoQueue.shift();
+    if (!el.isConnected) continue;
+    const bird = catalog.find(b => b.index === Number(el.dataset.guidePhoto));
+    if (!bird) continue;
+    activePhotos++;
+    fillPhoto(el, bird).finally(() => { activePhotos--; drainPhotos(); });
+  }
 }
 let profileToken = 0;
 async function openProfile(index) {
@@ -510,23 +540,33 @@ function render() {
   }
   dialog.close();
   page = location.hash.slice(1) || "home";
-  if (!["home", "identify", "explore", "notebook", "about"].includes(page))
+  if (!["home", "identify", "explore", "ecology", "notebook", "about"].includes(page))
     page = "home";
   document.querySelectorAll("nav a").forEach((a) => {
     if (a.hash === `#${page}`) a.setAttribute("aria-current", "page");
     else a.removeAttribute("aria-current");
   });
-  document.title = `${{ home: "A closer look at the wild", identify: "Identify a bird", explore: "Field guide", notebook: "Your notebook", about: "Our purpose" }[page]} — Nepal Bird ID`;
+  document.title = `${{ home: "A closer look at the wild", identify: "Identify a bird", explore: "Field guide", notebook: "Your notebook", ecology: "Birds & ecology", about: "Our purpose" }[page]} — Nepal Bird ID`;
   if (page === "explore") renderGuide();
   else if (page === "notebook") renderNotebook();
   else {
     main.innerHTML =
       page === "identify"
         ? identifyPage()
+        : page === "ecology"
+          ? ecologyPage()
         : page === "about"
           ? about()
           : home();
     if (page === "identify") bindIdentify();
+    if (page === "ecology") bindEcology();
+    if (["home", "about", "ecology"].includes(page)) {
+      main.querySelectorAll("[data-bird-name]").forEach(el => {
+        const bird = catalog.find(b => b.common === el.dataset.birdName);
+        if (bird) { el.dataset.guidePhoto = bird.index; }
+      });
+      observePhotos();
+    }
   }
   window.scrollTo(0, 0);
 }

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/prepare-social.mjs",
     "preview": "vite preview",
     "verify:model": "node scripts/verify-model.mjs",
     "verify:browser": "node scripts/check-layout.mjs && node scripts/check-inference.mjs",
